@@ -4,8 +4,6 @@
 ## AIM
 To develop a Django Application to store and retrieve data from a E-Commerce Website Database for Amazon or Flipkart using Object Relational Mapping(ORM).
 
-## ENTITY RELATIONSHIP DIAGRAM
-
 
 
 ## DESIGN STEPS
@@ -37,11 +35,6 @@ Execute Django admin using localhost and create details for 10 entries
 ## PROGRAM
 
 ```
-ADMIN.PY:
-
-from django.contrib import admin
-from . models import cars,CarAdmin
-admin.site.register(cars,CarAdmin)
 
 MODELS.PY:
 
@@ -57,14 +50,25 @@ class cars(models.Model):
 class CarAdmin(admin.ModelAdmin):
     list_display=['brand','model','year','price']
 
+ADMIN.PY:
+
+from django.contrib import admin
+from . models import cars,CarAdmin
+admin.site.register(cars,CarAdmin)
+
+
 ```
 
 
 
 ## OUTPUT
 
+![WhatsApp Image 2025-12-02 at 12 05 37_355169dc](https://github.com/user-attachments/assets/f451259d-c5ae-4f1d-b777-d23be3f7e691)
+
 
 
 ## RESULT
-![WhatsApp Image 2025-12-02 at 12 05 37_355169dc](https://github.com/user-attachments/assets/f451259d-c5ae-4f1d-b777-d23be3f7e691)
+
+Thus the program for creating E-commerce website database using ORM hass been executed successfully
+ 
 
